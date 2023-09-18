@@ -13,7 +13,7 @@ export default function ExcluirProduto() {
     (item) => item.id == id
   );
 
-  const [produto, setProduto] = useState({
+  const [produto] = useState({
     id: produtoRecuperadoDaListaById[0].id,
     nome: produtoRecuperadoDaListaById[0].nome,
     desc: produtoRecuperadoDaListaById[0].desc,
