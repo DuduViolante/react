@@ -3,10 +3,15 @@ import { ListaProdutos } from "../components/ListaProdutos";
 import {GrFormEdit as Editar} from "react-icons/gr";
 import {RiDeleteBin2Fill as Excluir} from "react-icons/ri";
 import style from "./Produtos.module.css";
+import { useEffect } from "react";
 
 export default function Produtos() {
   document.title = "Produtos";
-  
+
+  useEffect(()=>{
+    console
+  });
+
 
   return ( 
     <div>
