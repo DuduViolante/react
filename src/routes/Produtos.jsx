@@ -6,7 +6,7 @@ import style from "./Produtos.module.css";
 
 export default function Produtos() {
   document.title = "Produtos";
-
+  
 
   return ( 
     <div>
