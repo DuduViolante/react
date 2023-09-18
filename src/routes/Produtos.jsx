@@ -8,11 +8,13 @@ import { useEffect, useState } from "react";
 export default function Produtos() {
   document.title = "Produtos";
 
+  useEffect(()=>{
+    console.log("Este useEffect renderiza sempre! " + counter);
+  });
+
   const [counter, setCounter] = useState(0);
 
-  useEffect(()=>{
-    console.log("Este useEffect renderiza sempre!");
-  });
+
 
   return ( 
     <div>
