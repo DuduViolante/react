@@ -8,6 +8,7 @@ import EditarProdutos from './routes/EditarProdutos.jsx';
 import Erro404 from './routes/Erro404.jsx';
 import Produtos from './routes/Produtos.jsx';
 import ExcluirProduto from './routes/ExcluirProduto.jsx';
+import AdicionarProdutos from './routes/components/AdicionarProdutos.jsx';
 
 const router = createBrowserRouter([
   {path: '/', element: <App/>,
@@ -17,9 +18,22 @@ const router = createBrowserRouter([
       {path: '/produtos', element: <Produtos/>},
       {path: '/editar/produtos/:id', element: <EditarProdutos/>},
       {path: '/excluir/produtos/:id', element: <ExcluirProduto/>},
-    ]
-  }
+      
+    ],
+  },
+  {path: '/adicionar/produtos', element: <AdicionarProdutos/>}
 ]);
+
+
+// children: [
+//   { path: '/', element: <Home /> },
+//   { path: '/produtos', element: <Produtos /> },
+//   { path: '/editar/produtos/:id', element: <EditarProduto /> },
+//   { path: '/excluir/produtos/:id', element: <ExcluirProduto /> },
+// ],
+// },
+// { path: '/adicionar/produtos', element: <AdicionarProduto /> },
+// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
