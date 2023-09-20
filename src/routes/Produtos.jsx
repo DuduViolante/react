@@ -5,6 +5,7 @@ import {RiDeleteBin2Fill as Excluir} from "react-icons/ri";
 import style from "./Produtos.module.css";
 import { useEffect, useState } from "react";
 
+
 export default function Produtos() {
   document.title = "Produtos";
 
@@ -38,6 +39,11 @@ export default function Produtos() {
       <div>
         <button onClick={()=> setCounter2(counter2 + 1)}>COUNTER2 - {counter2}</button>
       </div>
+
+      <div>
+        <button> <Link to={`/adicionar/produtos`}>ADICIONAR</Link></button>
+      </div>
+
       <table className={style.tblEstilo}>
         <thead>
         <tr>
