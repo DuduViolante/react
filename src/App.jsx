@@ -2,6 +2,7 @@
 import { Outlet } from "react-router-dom";
 import Cabecalho from "./components/Cabecalho";
 import Rodape from "./components/Rodape";
+import styles from "./App.module.css";
 // import { useState } from "react";
 
 export default function App() {
@@ -15,8 +16,8 @@ export default function App() {
   // }
 
   return (
-    <>
-      <div>
+    
+      <div className={styles.container}>
         {/* Isso é um comentário */}
 
         {/* Vamos criar uma cabeçalho com um header, um h1 com um título e uma lista ul com 3 item com link. */}
@@ -29,6 +30,5 @@ export default function App() {
         <Rodape />
         {/* Vamos criar um rodapé com uma div, uma lista com 3 itens com links para redes sociais e abaixo um <p></p> com o texto e código do símbolo de direitos reservados. */}
       </div>
-    </>
-  );
+    );
 }

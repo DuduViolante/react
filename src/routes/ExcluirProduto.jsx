@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import { ListaProdutos } from "../components/ListaProdutos";
-import classes from "./ExcluirProdutos.modules.css"
+import classes from "./ExcluirProdutos.module.css"
 
 export default function ExcluirProduto() {
   document.title = "Excluir Produto";
