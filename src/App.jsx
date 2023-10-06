@@ -1,6 +1,6 @@
 //Importando dependências e ou arquivos que vamos utilizar e ou referenciar.
 import { Outlet } from "react-router-dom";
-import Cabecalho from "./components/Cabecalho";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Rodape from "./components/Rodape";
 import styles from "./App.module.css";
 // import { useState } from "react";
