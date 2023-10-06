@@ -3,7 +3,8 @@ import {GrFormEdit as Editar} from "react-icons/gr";
 import {RiDeleteBin2Fill as Excluir} from "react-icons/ri";
 import style from "./Produtos.module.css";
 import { useEffect, useState } from "react";
-
+import ModalInserir from "../components/ModalInserir/ModalInserir";
+import "./Produtos.scss";
 
 export default function Produtos() {
   document.title = "Produtos";
@@ -24,9 +25,16 @@ export default function Produtos() {
     .catch(error => console.log(error));
   },[]);
 
+  const [open, setOpen] = useState(false);
+
   return ( 
     <div>
       <h1>LISTA DE PRODUTOS</h1>
+
+      {open ? <ModalInserir open={open} setOpen={setOpen}/> : "" }
+
+      <button onClick={()=> setOpen(true)}>CADASTRAR PRODUTO</button>
+
       <table className={style.tblEstilo}>
         <thead>
         <tr>
